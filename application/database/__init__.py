@@ -101,7 +101,7 @@ class Profile(db.Model, GenericSQLAlchemyMethods):
     first_name = db.Column(db.String(128))
     last_name = db.Column(db.String(128))
 
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name, last_name, phone):
         self.first_name = first_name
         self.last_name = last_name
         self.phone = phone
