@@ -13,7 +13,6 @@ db = SQLAlchemy()
 
 
 class GenericSQLAlchemyMethods:
-
     @classmethod
     def find_by_id(cls, id):
         return cls.query.filter(cls.id == id).first()
